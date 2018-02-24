@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F113BCE-8950-44BF-87FD-21CC9473D0F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{18747692-07FB-43C2-A749-33CAC3520E5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibraryAssets", "LibraryAssets", "{C2ED2B30-01C1-460D-B90A-890F63F3FF3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryAssetsAPI", "LibraryAssetsAPI\LibraryAssetsAPI.csproj", "{168661D7-3E9F-437E-8BB8-4DE488939D52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{168661D7-3E9F-437E-8BB8-4DE488939D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168661D7-3E9F-437E-8BB8-4DE488939D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168661D7-3E9F-437E-8BB8-4DE488939D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168661D7-3E9F-437E-8BB8-4DE488939D52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18747692-07FB-43C2-A749-33CAC3520E5F} = {3F113BCE-8950-44BF-87FD-21CC9473D0F3}
+		{C2ED2B30-01C1-460D-B90A-890F63F3FF3D} = {18747692-07FB-43C2-A749-33CAC3520E5F}
+		{168661D7-3E9F-437E-8BB8-4DE488939D52} = {C2ED2B30-01C1-460D-B90A-890F63F3FF3D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {363A77B2-16B8-4F8F-99C4-A8FE23F964B1}
+	EndGlobalSection
+EndGlobal
