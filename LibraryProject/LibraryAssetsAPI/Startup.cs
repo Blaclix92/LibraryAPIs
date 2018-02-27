@@ -31,6 +31,7 @@ namespace LibraryAssetsAPI
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,12 +42,14 @@ namespace LibraryAssetsAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+           
         }
     }
 }
